@@ -1,0 +1,27 @@
+#Get all books
+GET http://localhost:3020/books/ HTTP/1.1
+Content-Type: application/json
+
+###
+# Add 1 books
+POST http://localhost:3020/books/ HTTP/1.1
+Content-Type: application/json
+
+{
+    title: "Awesome Dude"
+}
+
+###
+# update 1 books
+PUT http://localhost:3020/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    title: "Erradicator of British"
+}
+
+###
+
+# Delete 1 books
+DELETE  http://localhost:3020/books/1 HTTP/1.1
+Content-Type: application/json
